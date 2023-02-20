@@ -1,5 +1,4 @@
-import openai, os, sys
-import subprocess, random
+import openai, os, sys, random
 
 api_keys = [
     "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",
@@ -53,7 +52,7 @@ def tableClass(table, new_file=None):
     
     
     # Выводим сгенерированный текст
-    return message
+    return table_name
 
 filename = None
 req = sys.argv[1]
@@ -63,6 +62,6 @@ if len(sys.argv) == 3:
 
 
 res = tableClass(req, filename)
-print(res)
+print(f"[+] file {res} generated")
 
 

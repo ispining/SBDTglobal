@@ -67,7 +67,6 @@ class CustomerPanel:
             send(chat_id, msg, reply_markup=k)
             stages(chat_id, "client356_edit_content")
 
-
         def new_client(self, chat_id):
             k = kmarkup()
             msg = get_text(chat_id, "client356_new_client_msg")
